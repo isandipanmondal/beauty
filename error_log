@@ -1,0 +1,44 @@
+[13-Mar-2018 06:30:39 UTC] PHP Fatal error:  Cannot redeclare path() (previously declared in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/front-page.php:7) in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/header.php on line 5
+[13-Mar-2018 06:30:46 UTC] PHP Fatal error:  Cannot redeclare path() (previously declared in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/front-page.php:7) in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/header.php on line 5
+[13-Mar-2018 06:30:53 UTC] PHP Fatal error:  Cannot redeclare path() (previously declared in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/front-page.php:7) in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/header.php on line 5
+[13-Mar-2018 06:31:39 UTC] PHP Fatal error:  Cannot redeclare path() (previously declared in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/front-page.php:7) in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/header.php on line 5
+[13-Mar-2018 06:33:41 UTC] PHP Fatal error:  Cannot redeclare path() (previously declared in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/front-page.php:7) in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/header.php on line 5
+[13-Mar-2018 06:34:37 UTC] PHP Fatal error:  Cannot redeclare path() (previously declared in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/front-page.php:7) in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/header.php on line 5
+[13-Mar-2018 06:36:25 UTC] PHP Fatal error:  Cannot redeclare path() (previously declared in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/front-page.php:7) in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/header.php on line 5
+[13-Mar-2018 06:36:30 UTC] PHP Fatal error:  Cannot redeclare path() (previously declared in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/front-page.php:7) in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/header.php on line 5
+[13-Mar-2018 06:37:20 UTC] PHP Fatal error:  Cannot redeclare path() (previously declared in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/front-page.php:7) in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/header.php on line 5
+[13-Mar-2018 10:16:05 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/header.php:8) in /home/seoajayco/public_html/nextcore-media-support/wp-includes/pluggable.php on line 1216
+[13-Mar-2018 10:16:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/header.php:8) in /home/seoajayco/public_html/nextcore-media-support/wp-includes/pluggable.php on line 1216
+[13-Mar-2018 10:16:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/header.php:8) in /home/seoajayco/public_html/nextcore-media-support/wp-includes/pluggable.php on line 1216
+[13-Mar-2018 10:17:52 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/header.php:8) in /home/seoajayco/public_html/nextcore-media-support/wp-includes/pluggable.php on line 1216
+[13-Mar-2018 10:18:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/header.php:8) in /home/seoajayco/public_html/nextcore-media-support/wp-includes/pluggable.php on line 1216
+[14-Mar-2018 08:24:25 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/header.php on line 90
+[14-Mar-2018 08:26:47 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/header.php on line 95
+[14-Mar-2018 08:29:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_user_role() in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/header.php:88
+Stack trace:
+#0 /home/seoajayco/public_html/nextcore-media-support/wp-includes/template.php(688): require_once()
+#1 /home/seoajayco/public_html/nextcore-media-support/wp-includes/template.php(647): load_template('/home/seoajayco...', true)
+#2 /home/seoajayco/public_html/nextcore-media-support/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/front-page.php(4): get_header()
+#4 /home/seoajayco/public_html/nextcore-media-support/wp-includes/template-loader.php(74): include('/home/seoajayco...')
+#5 /home/seoajayco/public_html/nextcore-media-support/wp-blog-header.php(19): require_once('/home/seoajayco...')
+#6 /home/seoajayco/public_html/nextcore-media-support/index.php(17): require('/home/seoajayco...')
+#7 {main}
+  thrown in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/header.php on line 88
+[14-Mar-2018 09:16:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_user_role() in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/header.php:88
+Stack trace:
+#0 /home/seoajayco/public_html/nextcore-media-support/wp-includes/template.php(688): require_once()
+#1 /home/seoajayco/public_html/nextcore-media-support/wp-includes/template.php(647): load_template('/home/seoajayco...', true)
+#2 /home/seoajayco/public_html/nextcore-media-support/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/front-page.php(4): get_header()
+#4 /home/seoajayco/public_html/nextcore-media-support/wp-includes/template-loader.php(74): include('/home/seoajayco...')
+#5 /home/seoajayco/public_html/nextcore-media-support/wp-blog-header.php(19): require_once('/home/seoajayco...')
+#6 /home/seoajayco/public_html/nextcore-media-support/index.php(17): require('/home/seoajayco...')
+#7 {main}
+  thrown in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/header.php on line 88
+[16-Mar-2018 04:45:30 UTC] PHP Parse error:  syntax error, unexpected 'display' (T_STRING), expecting ',' or ';' in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/front-page.php on line 35
+[16-Mar-2018 05:56:13 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/functions.php on line 106
+[16-Mar-2018 05:56:53 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/functions.php on line 106
+[16-Mar-2018 05:58:15 UTC] PHP Parse error:  syntax error, unexpected ':' in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/functions.php on line 110
+[16-Mar-2018 07:55:58 UTC] PHP Parse error:  syntax error, unexpected 'wp_die' (T_STRING) in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/functions.php on line 152
+[16-Mar-2018 11:50:57 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/seoajayco/public_html/nextcore-media-support/wp-content/themes/nextcoremediasupport/functions.php on line 136

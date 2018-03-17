@@ -1,0 +1,347 @@
+@media (min-width:3501px){
+	.header {
+    background: url(../image/header3.jpg) no-repeat;
+    background-size: cover;
+    padding-bottom: 140px;
+	
+}
+}
+@media (min-width:2401px) and (max-width:3500px){
+	.header {
+    background: url(../image/header2.jpg) no-repeat;
+    background-size: cover;
+    padding-bottom: 140px;
+	
+}
+}
+@media (min-width:1901px) and (max-width:2400px){
+	
+.header {
+    background: url(../image/header1.jpg) no-repeat;
+    background-size: cover;
+    padding-bottom: 140px;
+	
+}
+}
+@media (min-width: 1367px) and (max-width:1900px){
+	.main-head {
+    position: relative;
+    top: 29px;
+    padding-top: 138px;
+    padding-bottom: 78px;
+}
+}
+@media (min-width: 992px) and (max-width: 1199px){
+	.hair-p {
+    padding: 0px 15px 10px;
+    font-size: 11px;
+}
+.artist-btn {
+    border: 1px solid #5f188a;
+    font-size: 9px;
+}
+.hvr-sweep-to-right {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    padding: 8px 22px;
+    
+    color: #fff;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.our-price p {
+    margin: 0 0 0px;
+    font-size: 12px;
+}
+.artst {
+    padding-top: 10px;
+    margin-bottom: 19px;
+}
+.artst-nm-p {
+    font-family: 'Cinzel', serif;
+    font-size: 15px !important;
+    padding-bottom: 4px;
+}
+.learn-btn {
+    background: transparent;
+    border: 1px solid #000;
+    color: #020202 !important;
+    text-transform: uppercase;
+}
+	}
+@media (min-width: 768px) and (max-width: 991px){
+	.hair-p {
+    padding: 0px 15px 10px;
+    font-size: 11px;
+}
+.artist-btn {
+    border: 1px solid #5f188a;
+    font-size: 9px;
+}
+.hvr-sweep-to-right {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    padding: 8px 22px;
+    
+    color: #fff;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.our-price 
+	p {
+    margin: 0 0 0px;
+    font-size: 11px;
+}
+.artst {
+    padding-top: 10px;
+    margin-bottom: 19px;
+}
+
+	}
+@media (min-width: 668px) and (max-width: 767px){
+	.logo {
+    position: absolute;
+    top: 6px;
+    margin-bottom: -30px;
+    width: 19%;
+    left: 7px;
+}
+.main-head {
+    position: relative;
+    top: 46px;
+    padding-right: 121px;
+}
+
+.navbar-collapse {
+    padding-right: 15px;
+    padding-left: 15px;
+    overflow-x: visible;
+    -webkit-overflow-scrolling: touch;
+    border-top: 1px solid transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+    position: absolute;
+    background: #5f1989;
+    z-index: 99;
+    width: 100%;
+}
+.makeup-area img{
+	    width: 100%;
+}
+.makeup-area {
+    box-shadow: -1px 3px 5px 0px rgba(153,153,153,1);
+    transition: 0.5s;
+    margin-bottom: 33px;
+}
+.artist-name {
+    font-family: 'Cinzel', serif;
+    color: #1b0827;
+    font-size: 18px;
+    padding-top: 20px;
+    text-align: center;
+}
+.artist-add {
+    font-family: 'Cinzel', serif;
+    color: #3c3b3c;
+    text-align: center;
+}
+.artst-btn {
+    padding-top: 10px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 26px;
+}
+.mkup-artist {
+    padding-top: 30px;
+    text-align: center;
+}
+.mkup-artist img{
+	    margin: 0 auto;
+}
+	}
+@media (min-width: 481px) and (max-width: 667px){
+	.logo {
+    position: absolute;
+    top: 6px;
+    margin-bottom: -30px;
+    width: 25%;
+    left: 7px;
+}
+
+.navbar-collapse {
+    padding-right: 15px;
+    padding-left: 15px;
+    overflow-x: visible;
+    -webkit-overflow-scrolling: touch;
+    border-top: 1px solid transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+    position: absolute;
+    background: #5f1989;
+    z-index: 99;
+    width: 100%;
+}
+.makeup-area img{
+	    width: 100%;
+}
+.makeup-area {
+    box-shadow: -1px 3px 5px 0px rgba(153,153,153,1);
+    transition: 0.5s;
+    margin-bottom: 33px;
+}
+.artist-name {
+    font-family: 'Cinzel', serif;
+    color: #1b0827;
+    font-size: 18px;
+    padding-top: 20px;
+    text-align: center;
+}
+.artist-add {
+    font-family: 'Cinzel', serif;
+    color: #3c3b3c;
+    text-align: center;
+}
+.artst-btn {
+    padding-top: 10px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 26px;
+}
+.mkup-artist {
+    padding-top: 30px;
+    text-align: center;
+}
+.mkup-artist img{
+	    margin: 0 auto;
+}
+	}
+@media (min-width: 320px) and (max-width: 480px){
+	.logo {
+    position: absolute;
+    top: 6px;
+    margin-bottom: -30px;
+    width: 25%;
+    left: 7px;
+}
+
+.navbar-collapse {
+    padding-right: 15px;
+    padding-left: 15px;
+    overflow-x: visible;
+    -webkit-overflow-scrolling: touch;
+    border-top: 1px solid transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+    position: absolute;
+    background: #5f1989;
+    z-index: 99;
+    width: 100%;
+}
+h1 {
+    font-size: 38px;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    color: #0e3c53;
+}
+
+.head-btn {
+    text-align: left;
+    padding-top: 20px;
+    font-size: 11px;
+}
+.hvr-sweep-to-right {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    padding: 10px 19px;
+   
+    color: #fff;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.makeup-area {
+    box-shadow: -1px 3px 5px 0px rgba(153,153,153,1);
+    transition: 0.5s;
+    margin-bottom: 33px;
+}
+.buty p {
+    padding: 10px 0;
+    color: #FFF;
+}
+.buty-h2 {
+    margin-left: 48px;
+    color: #ffffff;
+}
+
+.learn-btn {
+    background: transparent;
+    border: 1px solid #000;
+    color: #0c0d0d !important;
+    text-transform: uppercase;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.dscvr-icon {
+    text-align: center;
+    MARGIN-BOTTOM: 29px;
+}
+.artist-name {
+    font-family: 'Cinzel', serif;
+    color: #1b0827;
+    font-size: 18px;
+    padding-top: 20px;
+    text-align: center;
+}
+.artist-add {
+    font-family: 'Cinzel', serif;
+    color: #3c3b3c;
+    text-align: center;
+}
+.artst-btn {
+    padding-top: 10px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 26px;
+}
+.makeup-area img{
+	    width: 100%;
+}
+.dscvr-icon {
+    text-align: center;
+    margin-bottom: 30px;
+}
+	}
+	
