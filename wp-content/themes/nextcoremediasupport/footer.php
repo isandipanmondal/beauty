@@ -74,8 +74,31 @@
     <script src="<?php path(); ?>js/bootstrap.min.js"></script>
 	<script src="<?php path(); ?>js/wow.js"></script>
     <!-- <script src="<?php //path(); ?>js/main.js"></script> -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			$(".imgsubmit").click(function(){
+				var fd = new FormData($('#msform')[0]);
+			    fd.append( "main_image", $('#main_image')[0].files[0]);
+			    fd.append( "action", 'profile_image');
+				console.log(fd);
+				$.ajax({
+					url:'<?php echo admin_url('admin-ajax.php'); ?>',
+					type:'POST',
+					processData: false,
+        			contentType: false,
+					data : fd,
+					success: function(data, textStatus, XMLHttpRequest) {
+			            console.log(data);
+			        },
 
-   
+			        error: function(MLHttpRequest, textStatus, errorThrown) {
+			            alert(errorThrown);
+			        }
+				});
+			});
+		});
+	</script>
 
     <?php wp_footer(); ?>
   </body>

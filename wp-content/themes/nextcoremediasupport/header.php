@@ -48,23 +48,6 @@
 
 		<div class="user_login_imge ">
 
-					<?php  
-
-						if (is_user_logged_in()) {
-
-							global $current_user;
-							//print_r($current_user);
-							//get_currentuserinfo();
-							echo 'User : ' . $current_user->display_name ;
-
-
-							?>
-								<img src="<?php echo get_template_directory_uri()."/uploads/".get_user_meta( $current_user->ID, 'user_img', true );  ?>" />
-								<a href="<?php echo wp_logout_url( home_url('home') ); ?>">Logout</a></span>
-							<?php
-						}
-						
-					?>
 		</div>
 
 
