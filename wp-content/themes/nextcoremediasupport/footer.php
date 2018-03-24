@@ -79,7 +79,11 @@
 			
 			$(".imgsubmit").click(function(){
 				var fd = new FormData($('#msform')[0]);
-			    fd.append( "main_image", $('#main_image')[0].files[0]);
+				var countItems = $('#main_image')[0].files.length;
+				for (var x = 0; x < countItems; x++) {
+				    fd.append("main_image[]", $('#main_image')[0].files[x]);
+				}
+			    //fd.append( "main_image", $('#main_image')[0].files[0]);
 			    fd.append( "action", 'profile_image');
 				console.log(fd);
 				$.ajax({

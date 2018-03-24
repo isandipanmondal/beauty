@@ -153,18 +153,36 @@ add_action( 'wp_ajax_nopriv_profile_image','profile_image' );
 
 
 function profile_image(){
-		//print_r($_FILES);
-		$imageName = $_FILES['main_image']['name'];
-		$tempImageName = $_FILES['main_image']['tmp_name']; 
+		print_r($_FILES);
 
-       
-	    if (!function_exists('wp_handle_upload')) {
+		$count = count($_FILES['main_image']['name']);
+		for ($i = 0; $i < $count; $i++) { 
+		
+		$imageName = $_FILES['main_image']['name'][$i];
+		$tempImageName = $_FILES['main_image']['tmp_name'][$i]; 
+
+       if (!function_exists('wp_handle_upload')) {
 	       require_once(ABSPATH . 'wp-admin/includes/file.php');
 	   }
+	    
       // echo $_FILES["upload"]["name"];
-      $uploadedfile = $_FILES['main_image'];
-      $upload_overrides = array('test_form' => false);
+      //$uploadedfile = $_FILES['main_image'];
+      //$upload_overrides = array('test_form' => false);
       $movefile = wp_handle_upload($uploadedfile, $upload_overrides);
+
+      		$files = $_FILES['main_image'];
+			$upload_overrides = array('test_form' => false);
+			foreach ($files['name'] as $key => $value) {
+			  if ($files['name'][$key]) {
+			    $file = array(
+			      'name'     => $files['name'][$key],
+			      'type'     => $files['type'][$key],
+			      'tmp_name' => $files['tmp_name'][$key],
+			      'error'    => $files['error'][$key],
+			      'size'     => $files['size'][$key]
+			    );
+			    $movefile = wp_handle_upload($file, $upload_overrides);
+			  
 
     // echo $movefile['url'];
       if ($movefile && !isset($movefile['error'])) {
@@ -202,7 +220,7 @@ function profile_image(){
 
 		set_post_thumbnail( $parent_post_id, $attach_id );
 
-		update_usermeta( get_current_user_id(), 'user_meta_image', $attach_id );
+		update_usermeta( get_current_user_id(), 'user_meta_image'.$key, $attach_id );
          //echo "File Upload Successfully";
     } else {
         /**
@@ -211,6 +229,9 @@ function profile_image(){
          */
         echo $movefile['error'];
     }
+    } //end if $files['name'][$key]
+	} //end $files['name'] foreach
+	} //end for loop
     die();
  }
 
