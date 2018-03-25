@@ -255,3 +255,18 @@ function additional_user_fields( $user ) { ?>
  
 add_action( 'show_user_profile', 'additional_user_fields' );
 add_action( 'edit_user_profile', 'additional_user_fields' );
+
+
+add_filter( 'init', "set_cookie_func" );
+
+function set_cookie_func(){
+
+   $secure = ( 'https' === parse_url( wp_login_url(), PHP_URL_SCHEME ) );
+   setcookie( TEST_COOKIE, 'WP Cookie check', 0, '/nextcore-media-support/', COOKIE_DOMAIN, $secure );
+   setcookie( 'LETMEIN', 'OK', 0, '/', COOKIE_DOMAIN, $secure );
+   if ( SITECOOKIEPATH != COOKIEPATH ){
+   setcookie( TEST_COOKIE, 'WP Cookie check', 0, '/nextcore-media-support/', COOKIE_DOMAIN, $secure );
+   setcookie( 'LETMEIN', 'OK', 0, '/', COOKIE_DOMAIN, $secure );
+   }
+   
+}
