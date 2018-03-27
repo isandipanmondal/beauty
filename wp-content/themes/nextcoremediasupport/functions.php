@@ -153,7 +153,11 @@ add_action( 'wp_ajax_nopriv_profile_image','profile_image' );
 
 
 function profile_image(){
-		print_r($_FILES);
+		//print_r($_FILES);
+
+		global $wpdb;
+		$table = $table_prefix.'usermeta';
+		$wpdb->query('DELETE FROM `wpmp_usermeta` WHERE `user_id`="'.get_current_user_id().'" AND `meta_key` LIKE "%user_meta_image%"');
 
 		$count = count($_FILES['main_image']['name']);
 		for ($i = 0; $i < $count; $i++) { 
@@ -168,7 +172,7 @@ function profile_image(){
       // echo $_FILES["upload"]["name"];
       //$uploadedfile = $_FILES['main_image'];
       //$upload_overrides = array('test_form' => false);
-      $movefile = wp_handle_upload($uploadedfile, $upload_overrides);
+      //$movefile = wp_handle_upload($uploadedfile, $upload_overrides);
 
       		$files = $_FILES['main_image'];
 			$upload_overrides = array('test_form' => false);
@@ -181,7 +185,7 @@ function profile_image(){
 			      'error'    => $files['error'][$key],
 			      'size'     => $files['size'][$key]
 			    );
-			    $movefile = wp_handle_upload($file, $upload_overrides);
+			$movefile = wp_handle_upload($file, $upload_overrides);
 			  
 
     // echo $movefile['url'];
