@@ -18,16 +18,15 @@
 					
 					
 					<div class="form">
-                <form id="search-form" class="form-search form-horizontal">
-                    <input type="text" class="input-search search-frm" placeholder="Search Here.....">
-                    <?php echo get_search_form(); ?>
-
+                <form method="get" action="<?php echo site_url('search');?>" class="form-search form-horizontal">
+                    <input type="text" class="input-search search-frm" name="keyword" id="search" placeholder="Search Here.....">
+					<input type="submit" class="hvr-sweep-to-right srch-btn" name="" value="Search">
                 </form>
 				
 				
 				<div class="head-btn">
 					<ul class="list-inline">
-						<li><a href="#" class="hvr-sweep-to-right srch-btn">SEARCH</a></li>
+						<li></li>
 							
 					
 					<?php  

@@ -274,3 +274,19 @@ function set_cookie_func(){
    }
    
 }
+
+function nfs_get_all_usernames(){
+	$blogusers = get_users( array( 'fields' => array( 'display_name' ) ) );
+	// Array of stdClass objects.
+	$count = count($blogusers);
+	$i = 0;
+	foreach ( $blogusers as $user ) {
+		$i++;
+
+		echo "'".esc_html( $user->display_name )."'";
+		if ($count != $i) {
+			echo ",";
+		}
+	}
+
+}

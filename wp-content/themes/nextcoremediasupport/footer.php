@@ -73,6 +73,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="<?php path(); ?>js/bootstrap.min.js"></script>
 	<script src="<?php path(); ?>js/wow.js"></script>
+	<!-- JS file -->
+	<script src="<?php path(); ?>js/jquery.easy-autocomplete.min.js"></script> 
+
     <!-- <script src="<?php //path(); ?>js/main.js"></script> -->
 	<script type="text/javascript">
 		$(document).ready(function(){
@@ -101,6 +104,12 @@
 			        }
 				});
 			});
+
+			var options = {
+			data: [<?php nfs_get_all_usernames(); ?>]
+			};
+
+			$("#search").easyAutocomplete(options);
 		});
 	</script>
 

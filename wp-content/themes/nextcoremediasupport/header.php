@@ -23,6 +23,8 @@
     <link href="<?php path(); ?>css/style.css" rel="stylesheet">
     <link  href="<?php path(); ?>css/font-awesome.css" rel="stylesheet"/> 
 	<link  href="<?php path(); ?>css/responsive.css" rel="stylesheet"/> 
+	<!-- CSS file -->
+	<link rel="stylesheet" href="<?php path(); ?>css/easy-autocomplete.min.css">
   </head>
 
   <?php wp_head(); ?>
