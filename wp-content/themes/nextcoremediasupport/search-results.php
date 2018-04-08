@@ -1,5 +1,6 @@
 <?php
 /*Template Name: Search Results*/
+if(!empty($_REQUEST['keyword'])){
 $keyword = $_REQUEST['keyword'];
 $args = array(
 	'search'         => $keyword,
@@ -10,4 +11,5 @@ $user_query = new WP_User_Query( $args );
 $userId = $user_query->results[0]->ID;
 $userImage = get_user_meta($userId,'user_meta_image',true);
 echo $userImage;
+}
 ?>
